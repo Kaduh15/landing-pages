@@ -11,6 +11,9 @@ const config: Config = {
       fontFamily: {
         sans: 'var(--font-inter)',
       },
+      boxShadow: {
+        rose: '0px 9px 25px 0px #E51D371A',
+      },
     },
   },
   plugins: [],
