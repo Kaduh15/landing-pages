@@ -5,7 +5,6 @@ import './globals.css'
 import { twMerge } from 'tailwind-merge'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
-console.log(inter)
 
 export const metadata: Metadata = {
   title: 'TeslaBank',
