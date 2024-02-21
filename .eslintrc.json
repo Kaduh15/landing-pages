@@ -1,0 +1,33 @@
+{
+  "extends": ["next/core-web-vitals", "@rocketseat/eslint-config/react"],
+  "plugins": ["import-helpers"],
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off", // para trabalhar com NextJS apenas
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always", // Cria uma nova linha para separar as importacoes
+        "groups": [
+          ["/^react/", "/^next/"],
+          "module",
+          "/^@shared/",
+          "absolute",
+          "/^components/",
+          "/^pages/",
+          "/utils/",
+          "/constants/",
+          "/^store/",
+          "/^styles/",
+          "/^templates/",
+          ["parent", "sibling", "index"]
+        ],
+        "alphabetize": { "order": "asc", "ignoreCase": true }
+      }
+    ]
+  }
+}
