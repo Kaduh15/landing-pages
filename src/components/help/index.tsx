@@ -10,7 +10,7 @@ export default function HelpSession() {
           Nullam ornare eu nisi fringilla consectetur. Suspendisse potenti.{' '}
         </p>
       </div>
-      <div>
+      <div className="flex flex-col gap-10">
         <Accordion title="Loren ipsum dolor sit amet">
           Vestibulum faucibus risus eu mi volutpat, vel tristique dui rutrum...
         </Accordion>
