@@ -1,3 +1,6 @@
+import Image from 'next/image'
+
+import SmartphoneSVG from '@/assets/smartphone.svg'
 import { DollarSign, Smartphone, Smile } from 'lucide-react'
 
 import { DetailsCard } from '../DetailsCard'
@@ -24,21 +27,26 @@ const detailsData = [
 
 export default function Details() {
   return (
-    <section className="px-6 py-16 flex flex-col gap-4">
-      <h2 className="text-start text-3xl font-semibold ">
-        Abra sua conta <span className="text-rose-600">gratuita</span>!
-      </h2>
-      <p className="text-lg">
-        Envie e receba dinheiro de forma mais prática e rápida. Faça Pix, TEDs e
-        transferências com agendamento para todos os bancos sem pagar nada.
-      </p>
-      {detailsData.map(({ description, icon, title }, index) => (
-        <DetailsCard.Card key={index}>
-          <DetailsCard.Icon icon={icon} />
-          <DetailsCard.Title>{title}</DetailsCard.Title>
-          <DetailsCard.Description>{description}</DetailsCard.Description>
-        </DetailsCard.Card>
-      ))}
+    <section className="px-6 py-16 flex flex-col gap-8 md:flex-row md:bg-white md:justify-center md:items-center md:px-56 md:py-28">
+      <Image src={SmartphoneSVG} alt="smartphone" className="w-2/5" />
+      <div>
+        <h2 className="text-start text-3xl font-semibold ">
+          Abra sua conta <span className="text-rose-600">gratuita</span>!
+        </h2>
+        <p className="text-lg">
+          Envie e receba dinheiro de forma mais prática e rápida. Faça Pix, TEDs
+          e transferências com agendamento para todos os bancos sem pagar nada.
+        </p>
+        {detailsData.map(({ description, icon, title }, index) => (
+          <DetailsCard.Card key={index}>
+            <DetailsCard.Icon icon={icon} />
+            <div className="flex flex-col gap-2">
+              <DetailsCard.Title>{title}</DetailsCard.Title>
+              <DetailsCard.Description>{description}</DetailsCard.Description>
+            </div>
+          </DetailsCard.Card>
+        ))}
+      </div>
     </section>
   )
 }
