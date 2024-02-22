@@ -14,6 +14,9 @@ const config: Config = {
       boxShadow: {
         rose: '0px 9px 25px 0px #E51D371A',
       },
+      backgroundImage: {
+        wave: 'url("/wave.svg")',
+      },
     },
   },
   plugins: [],
