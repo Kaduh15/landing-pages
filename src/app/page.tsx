@@ -3,6 +3,7 @@ import Depositions from '@/components/Depositions'
 import Details from '@/components/Details'
 import DownloadSession from '@/components/DownloadSession'
 import Header from '@/components/Header'
+import HelpSession from '@/components/help'
 import Hero from '@/components/Hero'
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Benefits />
       <Depositions />
       <DownloadSession />
+      <HelpSession />
     </main>
   )
 }
