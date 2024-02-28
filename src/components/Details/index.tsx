@@ -28,9 +28,13 @@ const detailsData = [
 export default function Details() {
   return (
     <section className="px-6 py-16 flex flex-col gap-8 md:flex-row md:bg-white md:justify-center md:items-center md:px-56 md:py-28">
-      <Image src={SmartphoneSVG} alt="smartphone" className="w-2/5" />
+      <Image
+        src={SmartphoneSVG}
+        alt="smartphone"
+        className="w-2/5 hidden md:block"
+      />
       <div>
-        <h2 className="text-start text-3xl font-semibold ">
+        <h2 className="text-start text-3xl font-semibold">
           Abra sua conta <span className="text-rose-600">gratuita</span>!
         </h2>
         <p className="text-lg">

@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TeslaBank - Landing Page 🏦
 
-## Getting Started
+O TeslaBank é um projeto de landing page para um banco 100% digital, desenvolvido como parte de um estudo de frontend. A aplicação visa simular a interface de um banco online, proporcionando uma experiência intuitiva e moderna aos usuários.
 
-First, run the development server:
+## Tecnologias Utilizadas 🛠️
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
+
+    - Next.js: Um framework React para construção de aplicações web modernas.
+    - Tailwind CSS: Uma ferramenta utilitária de primeira classe para construir designs com base em componentes pequenos e compostos.
+    - Lucide React: Biblioteca para integração fácil e flexível de ícones em projetos React.
+## Como Rodar o Projeto ▶️
+Clone o Repositório:
+
+```bash
+git clone https://github.com/seu-usuario/teslabank.git
+```
+Acesse o Diretório:
+
+```bash
+cd teslabank
+```
+Instale as Dependências:
+
+```bash
+npm install
+```
+Inicie o Servidor de Desenvolvimento:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+O projeto estará disponível em ```http://localhost:3000.```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Link de Deploy 🚀
+O projeto TeslaBank está deployado na Vercel e pode ser acessado [aqui](https://teslabank-seven.vercel.app/).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Design no Figma 🎨
+O design do projeto pode ser visualizado no Figma através do [link](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?type=design&node-id=191725-3600&mode=design&t=vZNM8Nm4Sv6YHr2s-0).
