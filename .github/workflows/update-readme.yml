@@ -6,6 +6,9 @@ on:
       - main
     paths-ignore:
       - README.md
+  create:
+    branches:
+      - '*'  # Aciona o workflow para todos os novos branches criados
 
 jobs:
   update-readme:
@@ -30,7 +33,7 @@ jobs:
     - name: Get list of branches
       id: get_branches
       run: |
-        branches=$(git branch -r | grep -v '\->' | grep -v 'main' | awk -F/ '{print $2}')
+        branches=$(git branch -r | grep -v '\->' | grep -v 'main' | awk -F/ '{print $2}' | grep -v 'branch-base')
         branches=$(echo $branches | tr ' ' '\n' | sort -u | tr '\n' ' ')
         echo "branches=$branches" >> $GITHUB_ENV
         echo "::set-output name=branches::$branches"
