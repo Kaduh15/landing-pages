@@ -6,9 +6,8 @@ on:
       - main
     paths-ignore:
       - README.md
-  pull_request:
-    branches:
-      - branch-base
+  schedule:
+    - cron: '0 */6 * * *'
 
 jobs:
   update-readme:
