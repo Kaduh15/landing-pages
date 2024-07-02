@@ -1,0 +1,65 @@
+name: Update README
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 0 * * *' # Executa diariamente à meia-noite
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Get branches
+      id: get_branches
+      run: |
+        branches=$(git branch -r | grep -v '\->' | grep -v 'main' | awk -F/ '{print $2}')
+        echo "::set-output name=branches::$branches"
+
+    - name: Update README.md
+      run: |
+        branches=${{ steps.get_branches.outputs.branches }}
+        echo "Branches: $branches"
+
+        # Inicia o conteúdo do README.md
+        echo "# Landing Pages Repository" > README.md
+        echo "" >> README.md
+        echo "Bem-vindo ao repositório de Landing Pages! Este repositório foi criado para armazenar todas as landing pages que eu desenvolver como forma de estudo de front-end. Cada landing page estará em uma branch separada, e você encontrará versões diferentes da mesma landing page utilizando tecnologias distintas." >> README.md
+        echo "" >> README.md
+        echo "## Índice de Landing Pages" >> README.md
+        echo "" >> README.md
+
+        # Adiciona cada branch ao README.md
+        for branch in $branches; do
+          echo "- [$branch](https://github.com/${{ github.repository }}/tree/$branch)" >> README.md
+        done
+
+        echo "" >> README.md
+        echo "## Como Navegar no Repositório" >> README.md
+        echo "" >> README.md
+        echo "1. **Branches:** Cada landing page tem sua própria branch principal. Navegue entre as branches para ver os diferentes projetos." >> README.md
+        echo "2. **Versões:** Dentro de cada branch, você encontrará diferentes versões da landing page, cada uma utilizando uma tecnologia diferente." >> README.md
+        echo "3. **Assets:** Utilize a pasta \`assets\` para armazenar imagens e outros recursos utilizados nas landing pages." >> README.md
+        echo "" >> README.md
+        echo "## Contribuições" >> README.md
+        echo "" >> README.md
+        echo "Se você deseja contribuir com este repositório, sinta-se à vontade para criar um pull request. Toda contribuição é bem-vinda!" >> README.md
+        echo "" >> README.md
+        echo "---" >> README.md
+        echo "" >> README.md
+        echo "Happy coding! 😊" >> README.md
+
+    - name: Commit changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add README.md
+        git commit -m 'Update README.md with branch links'
+        git push origin main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
