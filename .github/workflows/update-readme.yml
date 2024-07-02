@@ -10,8 +10,6 @@ on:
 jobs:
   update-readme:
     runs-on: ubuntu-latest
-    # env:
-    #   branches: 'main'
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v3
@@ -27,9 +25,7 @@ jobs:
         branches=$(git branch -r | grep -v '\->' | grep -v 'main' | awk -F/ '{print $2}')
         branches=$(echo $branches | tr ' ' '\n' | sort -u | tr '\n' ' ')
         echo "branches=$branches" >> $GITHUB_ENV
-        echo "::set-output name=branches::$(git branch --show-current)"
-    - name: Use branches output
-      run: echo "The current branch is ${{ steps.get_branches.outputs.branches }}"
+        echo "::set-output name=branches::$branches"
 
     - name: Update README.md
       run: |
@@ -39,7 +35,7 @@ jobs:
         echo "" >> README.md
         echo "## Índice de Landing Pages" >> README.md
         echo "" >> README.md
-        for branch in ${{ env.branches }}; do
+        for branch in ${{ steps.get_branches.outputs.branches }}; do
           echo "- [$branch](https://github.com/Kaduh15/landing-pages/tree/$branch)" >> README.md
         done
         echo "" >> README.md
@@ -58,11 +54,12 @@ jobs:
         echo "Happy coding! 😊" >> README.md
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git pull origin main --rebase  # Atualiza sua branch local com as mudanças remotas
         git add README.md
         git commit -m 'Update README.md with branch links'
-        git push origin main
+        git push origin main  # Faz o push das mudanças atualizadas para a branch main
 
     - name: Debugging
       run: |
-        echo "Branches: ${{ env.branches }}"
+        echo "Branches: ${{ steps.get_branches.outputs.branches }}"
         cat README.md
