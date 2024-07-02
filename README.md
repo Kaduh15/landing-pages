@@ -4,6 +4,10 @@ Bem-vindo ao repositório de Landing Pages! Este repositório foi criado para ar
 
 ## Índice de Landing Pages
 
+- [Positivus-HTML-CSS-JS](https://github.com/Kaduh15/landing-pages/tree/Positivus-HTML-CSS-JS)
+- [Positivus-Nextjs](https://github.com/Kaduh15/landing-pages/tree/Positivus-Nextjs)
+- [branch-base](https://github.com/Kaduh15/landing-pages/tree/branch-base)
+
 ## Como Navegar no Repositório
 
 1. **Branches:** Cada landing page tem sua própria branch principal. Navegue entre as branches para ver os diferentes projetos.
