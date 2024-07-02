@@ -55,8 +55,6 @@ jobs:
           echo "" >> README.md
           echo "1. **Branches:** Cada landing page tem sua própria branch principal. Navegue entre as branches para ver os diferentes projetos." >> README.md
           echo "2. **Versões:** Dentro de cada branch, você encontrará diferentes versões da landing page, cada uma utilizando uma tecnologia diferente." >> README.md
-          echo "3. **Assets:** Utilize a pasta \`assets\` para armazenar imagens e outros recursos utilizados nas landing pages." >> README.md
-          echo "" >> README.md
           echo "## Contribuições" >> README.md
           echo "" >> README.md
           echo "Se você deseja contribuir com este repositório, sinta-se à vontade para criar um pull request. Toda contribuição é bem-vinda!" >> README.md
