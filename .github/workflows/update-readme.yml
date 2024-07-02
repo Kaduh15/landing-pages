@@ -25,7 +25,7 @@ jobs:
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
     - name: Pull changes
-      run: git pull origin main
+      run: git pull origin main --rebase
 
     - name: Fetch all branches
       run: git fetch --all
