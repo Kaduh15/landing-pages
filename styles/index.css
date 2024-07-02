@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+:root {
+  --color-green: #B9FF66;
+  --color-dark: #191A23;
+  --color-grey: #F3F3F3;
+  --color-white: #FFFFFF;
+
+  --font-Space: "Space Grotesk",'Roboto', sans-serif;
+  --font-w-400: 400;
+  --font-w-500: 500;
+  --font-w-600: 600;
+  --font-w-700: 700;
+}
+
+html, body {
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--color-grey);
+  font-family: var(--font-Space);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  min-height: 100vh;
+  min-width: 100vw;
+  text-rendering: optimizeLegibility;
+}
+
+main {
+  background-color: var(--color-white);
+  margin: 0 auto;
+  max-width: 1440px;
+  min-height: 100vh;
+  padding: 3.75rem 6.25rem 0 6.25rem; 
+}
+
+.navbar {
+  align-items: center;
+  align-items: center;
+  background-color: var(--color-white);
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  padding: 1rem 2rem;
+}
+
+.navbar__link {
+  color: var(--color-dark);
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 4.38rem;
+  width: 100%;
+}
+
+.button-primary {
+  border-radius: 0.875rem;
+  border: 1px solid var(--color-dark);
+  font-family: var(--font-Space);
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 1.25rem 2.19rem;
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+
+.button-secondary {
+  border-radius: 0.875rem;
+  border: 1px solid var(--color-dark);
+  font-family: var(--font-Space);
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 1.25rem 2.19rem;
+  background: transparent;
+  color: var(--color-dark);
+}
+
+.button-tertiary {
+  border-radius: 0.875rem;
+  border: 1px solid var(--color-green);
+  font-family: var(--font-Space);
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 1.25rem 2.19rem;
+  background: var(--color-green);
+  color: var(--color-dark);
+}
+
+h1 {
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.content-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-hero__one {
+  max-width: 33rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.1875rem;
+}
+
+.content-hero > img {
+  width: 50%;
+  height: 50%;
+}
+
+.logotypes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logotypes > img {
+  height: 3rem;
+  filter: grayscale(100%);
+}
