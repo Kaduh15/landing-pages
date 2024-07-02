@@ -58,7 +58,6 @@ jobs:
         git add README.md
         git commit -m 'Update README.md with branch links'
         git push origin main  # Faz o push das mudanças atualizadas para a branch main
-
     - name: Debugging
       run: |
         echo "Branches: ${{ steps.get_branches.outputs.branches }}"
