@@ -6,9 +6,9 @@ on:
       - main
     paths-ignore:
       - README.md
-  create:
+  pull_request:
     branches:
-      - '*'  # Aciona o workflow para todos os novos branches criados
+      - branch-base
 
 jobs:
   update-readme:
