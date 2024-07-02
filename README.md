@@ -11,8 +11,6 @@ Bem-vindo ao repositório de Landing Pages! Este repositório foi criado para ar
 
 1. **Branches:** Cada landing page tem sua própria branch principal. Navegue entre as branches para ver os diferentes projetos.
 2. **Versões:** Dentro de cada branch, você encontrará diferentes versões da landing page, cada uma utilizando uma tecnologia diferente.
-3. **Assets:** Utilize a pasta `assets` para armazenar imagens e outros recursos utilizados nas landing pages.
-
 ## Contribuições
 
 Se você deseja contribuir com este repositório, sinta-se à vontade para criar um pull request. Toda contribuição é bem-vinda!
