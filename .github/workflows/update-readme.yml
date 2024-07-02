@@ -10,23 +10,31 @@ on:
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+    env:
+      branches: 'main feature/*'
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v3
       with:
         token: ${{ secrets.PAT }}
 
-    - name: Update README.md
+    - name: Fetch all branches
+      run: git fetch --all
+
+    - name: Get list of branches
       run: |
         branches=$(git branch -r | grep -v '\->' | grep -v 'main' | awk -F/ '{print $2}')
-        echo "::set-output name=branches::$branches"
+        echo "branches=$branches" >> $GITHUB_ENV
+
+    - name: Update README.md
+      run: |
         echo "# Landing Pages Repository" > README.md
         echo "" >> README.md
         echo "Bem-vindo ao repositório de Landing Pages! Este repositório foi criado para armazenar todas as landing pages que eu desenvolver como forma de estudo de front-end. Cada landing page estará em uma branch separada, e você encontrará versões diferentes da mesma landing page utilizando tecnologias distintas." >> README.md
         echo "" >> README.md
         echo "## Índice de Landing Pages" >> README.md
         echo "" >> README.md
-        for branch in $branches; do
+        for branch in ${{ env.branches }}; do
           echo "- [$branch](https://github.com/Kaduh15/landing-pages/tree/$branch)" >> README.md
         done
         echo "" >> README.md
@@ -47,4 +55,9 @@ jobs:
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git add README.md
         git commit -m 'Update README.md with branch links'
-        git push origin main --force
+        git push origin main
+
+    - name: Debugging
+      run: |
+        echo "Branches: ${{ env.branches }}"
+        cat README.md
