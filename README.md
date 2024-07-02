@@ -6,7 +6,6 @@ Bem-vindo ao repositório de Landing Pages! Este repositório foi criado para ar
 
 - [Positivus-HTML-CSS-JS](https://github.com/Kaduh15/landing-pages/tree/Positivus-HTML-CSS-JS)
 - [Positivus-Nextjs](https://github.com/Kaduh15/landing-pages/tree/Positivus-Nextjs)
-- [test-branch](https://github.com/Kaduh15/landing-pages/tree/test-branch)
 
 ## Como Navegar no Repositório
 
