@@ -17,7 +17,7 @@ jobs:
     - name: Update README.md
       run: |
         branches=$(git branch -r | grep -v '\->' | grep -v 'main' | awk -F/ '{print $2}')
-        echo "::set-output name=branches::$branches"
+        echo "branches=$(git branch -r | grep -v '\->' | grep -v 'main' | awk -F/ '{print $2}')" >> $GITHUB_ENV
         echo "# Landing Pages Repository" > README.md
         echo "" >> README.md
         echo "Bem-vindo ao repositório de Landing Pages! Este repositório foi criado para armazenar todas as landing pages que eu desenvolver como forma de estudo de front-end. Cada landing page estará em uma branch separada, e você encontrará versões diferentes da mesma landing page utilizando tecnologias distintas." >> README.md
