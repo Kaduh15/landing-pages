@@ -62,4 +62,4 @@ jobs:
         git commit -m 'Update README.md with branch links'
         git push origin main
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.PAT }}
