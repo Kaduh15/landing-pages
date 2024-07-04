@@ -50,6 +50,10 @@ main {
   text-decoration: none;
 }
 
+.navbar__link:hover {
+  text-decoration: underline ;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -93,6 +97,10 @@ header {
   padding: 1.25rem 2.19rem;
   background: var(--color-green);
   color: var(--color-dark);
+}
+
+button {
+  cursor: pointer;
 }
 
 h1 {
