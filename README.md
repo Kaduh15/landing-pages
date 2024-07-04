@@ -1,5 +1,3 @@
-Claro, Kadu! Vou adicionar alguns emojis e deixar o README mais dinâmico:
-
 # Positivus - HTML e CSS 🌟
 
 ![Positivus Cover](https://github.com/Kaduh15/landing-pages/raw/Positivus-HTML-CSS-JS/cover.png)
