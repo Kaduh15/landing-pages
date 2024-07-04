@@ -180,6 +180,24 @@ h1 {
   gap: 1.25rem;
 }
 
+.heading-component {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 8.75rem 0rem 5rem 0rem;
+}
+
+.heading-component > h2 {
+  font-size: 2.5rem;
+  font-weight: var(--font-w-500);
+}
+
+.heading-component > p {
+  font-weight: 400;
+  max-width: 50ch;
+}
+
 .heading {
   font-weight: 500;
   border-radius: 0.4375rem;
