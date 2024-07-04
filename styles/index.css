@@ -1,25 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
-
 :root {
   --color-green: #B9FF66;
   --color-dark: #191A23;
   --color-grey: #F3F3F3;
   --color-white: #FFFFFF;
-
-  --font-Space: "Space Grotesk",'Roboto', sans-serif;
-  --font-w-400: 400;
+  
+  --font-Space: "Space Grotesk", 'Roboto', sans-serif;
   --font-w-500: 500;
-  --font-w-600: 600;
-  --font-w-700: 700;
 }
 
 html, body {
   -webkit-font-smoothing: antialiased;
   background-color: var(--color-grey);
   font-family: var(--font-Space);
-  font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: var(--font-w-500);
   min-height: 100vh;
   min-width: 100vw;
   text-rendering: optimizeLegibility;
@@ -34,24 +29,23 @@ main {
 }
 
 .navbar {
-  align-items: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
   background-color: var(--color-white);
-  display: flex;
   gap: 2.5rem;
-  justify-content: center;
   padding: 1rem 2rem;
 }
 
 .navbar__link {
   color: var(--color-dark);
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: var(--font-w-500);
   text-decoration: none;
 }
 
 .navbar__link:hover {
-  text-decoration: underline ;
+  text-decoration: underline;
 }
 
 header {
@@ -62,51 +56,39 @@ header {
 .hero {
   display: flex;
   flex-direction: column;
-  gap: 4.38rem;
+  gap: 4.374rem;
   width: 100%;
 }
 
-.button-primary {
+.button {
   border-radius: 0.875rem;
   border: 1px solid var(--color-dark);
   font-family: var(--font-Space);
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: var(--font-w-500);
   padding: 1.25rem 2.19rem;
+  cursor: pointer;
+}
+
+.button-primary {
   background: var(--color-dark);
   color: var(--color-white);
 }
 
 .button-secondary {
-  border-radius: 0.875rem;
-  border: 1px solid var(--color-dark);
-  font-family: var(--font-Space);
-  font-size: 1.25rem;
-  font-weight: 500;
-  padding: 1.25rem 2.19rem;
   background: transparent;
   color: var(--color-dark);
 }
 
 .button-tertiary {
-  border-radius: 0.875rem;
-  border: 1px solid var(--color-green);
-  font-family: var(--font-Space);
-  font-size: 1.25rem;
-  font-weight: 500;
-  padding: 1.25rem 2.19rem;
+  border-color: var(--color-green);
   background: var(--color-green);
   color: var(--color-dark);
 }
 
-button {
-  cursor: pointer;
-}
-
 h1 {
   font-size: 3.75rem;
-  font-style: normal;
-  font-weight: 500;
+  font-weight: var(--font-w-500);
   line-height: normal;
 }
 
