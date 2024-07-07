@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+*:focus {
+	outline: none;
+}
+
+body {
+  /* cores de texto */
+  --text-color: #333;
+
+  /* cores de fundo */
+  --color-brand: #1E9E6A;
+
+  font-family: "Archivo", sans-serif;
+  line-height: 1.7;
+  color: var(--text-color);
+  background-color: var(--bg-grey-light);
+}
+
+.dark {
+  --text-color: #e6e6e6;
+  --bg-grey-light: #142136;
+  --bg-white: #22395d;
+  --bg-blue-dark: #142136;
+  --bg-indigo: #7577e1;
+}
