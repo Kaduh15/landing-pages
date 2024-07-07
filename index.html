@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +8,50 @@
   <link rel="stylesheet" href="styles.css">
   <title>Login</title>
 </head>
+
 <body class="">
-  <main class="container">
-    <header class="header">
-      <h1>
-        <Span>Bem-vindo de volta</Span>
-        Faça o login na sua conta
-      </h1>
-    </header>
+  <div class="container">
+
+    <section class="container-illustration">
+      <img src="/assets/images/illustration.svg" alt="">
+    </section>
+    <main class="container-content">
+      <div>
+      <header class="header">
+        <h1>
+          <Span>Bem-vindo de volta</Span>
+          Faça o login na sua conta
+        </h1>
+      </header>
       <form action="">
         <div class="container-input">
           <label for="email">E-mail</label>
           <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required>
         </div>
-        
+
         <div class="container-input">
           <label for="password">Senha</label>
           <input type="password" id="password" name="password" placeholder="0123456789" required>
         </div>
 
-        <div class="container-input">
+        <div class="container-remember">
           <input type="checkbox" id="remember-me">
           <label for="remember-me">Lembre de min</label>
           <a href="#">Esqueceu sua senha?</a>
         </div>
 
-        <button type="submit">Entrar</button>
-        <button type="login-google">Ou faça login com o Google</button>
+        <button class="button button-primary" type="submit">Entrar</button>
+        <button class="button button-secondary" type="login-google">
+          <img src="/assets/icons/google.svg" alt="Google Logo">
+          Ou faça login com o Google
+        </button>
       </form>
-
       <footer>
         <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
       </footer>
-  </main>
+    </div>
+    </main>
+  </div>
 </body>
+
 </html>
