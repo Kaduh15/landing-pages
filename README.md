@@ -2,7 +2,7 @@
     <h1>Login CodeLab - HTML e CSS 🌟</h1>
 </div>
 
-<p>Seja bem-vindo(a). Este é um repositório para as minha solução para o desafio 04 <span style="color:blue">Front-End</span> da comunidade CodeLab, criada pelo desenvolvedor <span style="color:Indigo">IuriCode</span>. 
+<p>Seja bem-vindo(a). Este é um repositório para as minha solução para o desafio 04 <span style="color:blue">Front-End</span> da comunidade CodeLab, criada pelo desenvolvedor <a href="https://github.com/iuricode">IuriCode</a>. 
 
 
 # Login CodeLab - HTML e CSS 🌟
