@@ -7,7 +7,7 @@
 
 # Login CodeLab - HTML e CSS 🌟
 
-![Login CodeLab Cover](https://github.com/Kaduh15/landing-pages/raw/Login-CodeLab/cover.png)
+![Login CodeLab Cover](https://github.com/Kaduh15/landing-pages/raw/login-CodeLab/cover.png)
 
 Este projeto é uma landing page desenvolvida para aprimorar minhas habilidades com HTML e CSS. É parte do meu repositório de estudos de front-end, onde cada branch representa uma landing page diferente. Além disso, foi adicionada a função de tema dark e light para uma melhor experiência do usuário.
 
