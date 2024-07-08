@@ -164,7 +164,7 @@ a {
   font-weight: 400;
 }
 
-.container-remember > input[type="checkbox"] {
+#remember-me {
   width: 1.3em;
   height: 1.3em;
   background-color: white;
@@ -176,6 +176,10 @@ a {
   outline: none;
   cursor: pointer;
   justify-self: self-start;
+}
+
+#remember-me:checked {
+  background-color: var(--color-brand);
 }
 
 .button {
