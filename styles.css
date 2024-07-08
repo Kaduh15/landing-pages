@@ -13,7 +13,7 @@
 .dark {
   --text-color: #e6e6e6;
   --bg-grey-light: #142136;
-  --bg-white: #22395d;
+  --bg-white: #142248;
   --bg-blue-dark: #142136;
   --bg-indigo: #7577e1;
   --bg-green-light: #20385f;
@@ -35,7 +35,7 @@ body {
   font-family: "Archivo", sans-serif;
   line-height: 1.7;
   color: var(--text-color);
-  background-color: var(--bg-grey-light);
+  background-color: var(--bg-white);
   min-height: 100vh;
   min-width: 100vw;
 }
@@ -140,6 +140,18 @@ form {
   font-size: 1rem;
   font-weight: 400;
   color: var(--text-color);
+}
+
+.input-error {
+  border: 0.06rem solid red !important;
+}
+.input-error:focus {
+  border: 0.06rem solid red !important;
+}
+
+.error-message {
+  font-size: 0.9rem;
+  color: red;
 }
 
 .container-remember {
