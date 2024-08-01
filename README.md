@@ -33,6 +33,3 @@ O projeto estará disponível em ```http://localhost:3000.```
 
 Link de Deploy 🚀
 O projeto TeslaBank está deployado na Vercel e pode ser acessado [aqui](https://teslabank-seven.vercel.app/).
-
-Design no Figma 🎨
-O design do projeto pode ser visualizado no Figma através do [link](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?type=design&node-id=191725-3600&mode=design&t=vZNM8Nm4Sv6YHr2s-0).
