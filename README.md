@@ -15,7 +15,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 Clone o Repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/teslabank.git
+git clone https://github.com/kaduh15/teslabank.git
 ```
 Acesse o Diretório:
 
