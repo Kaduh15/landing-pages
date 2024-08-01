@@ -2,6 +2,9 @@
 
 O TeslaBank é um projeto de landing page para um banco 100% digital, desenvolvido como parte de um estudo de frontend. A aplicação visa simular a interface de um banco online, proporcionando uma experiência intuitiva e moderna aos usuários.
 
+### Link de Deploy 🚀
+O projeto TeslaBank está deployado na Vercel e pode ser acessado [aqui](https://teslabank-seven.vercel.app/).
+
 ## Tecnologias Utilizadas 🛠️
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
@@ -30,6 +33,3 @@ Inicie o Servidor de Desenvolvimento:
 npm run dev
 ```
 O projeto estará disponível em ```http://localhost:3000.```
-
-Link de Deploy 🚀
-O projeto TeslaBank está deployado na Vercel e pode ser acessado [aqui](https://teslabank-seven.vercel.app/).
